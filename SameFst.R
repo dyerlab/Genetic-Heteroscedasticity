@@ -12,22 +12,18 @@ random_loci <- function( p, sd = 0.1, N = 40 ) {
   return( make_loci( freq, N = N) )
 }
   
-random_pops <- function( nloci = 2, npops = 5) { 
-
-  ret <- data.frame( Stratum = LETTERS[1:npops] )
-  
-  p <- runif( npops )
-  genos <- NA
-  for( i in 1:nloci ) {
-  
-      genos <- c( genos, random_loci( p[i] ) )
-      
-    
-    
+random_pops <- function( nloci = 2, npops = 5, ninds = 50, sd = 0.1) { 
+  ret <- data.frame() 
+  p <- runif( nloci,min = 0.2, max = 0.8 )
+  for( i in 1:npops ) { 
+    pop <- data.frame( Stratum = rep( LETTERS[i], ninds) )
+    for( j in 1:nloci) {
+      locName <- paste( "loc",j,sep=".")
+      pop[[locName]] <- random_loci(p[j], sd, ninds)
+    }
+    ret <- rbind( ret, pop )
   }
-  
   return( ret )
-  
 }
 
 loci <- rep( c("Loc.1", "Loc.2"), times=10)

@@ -16,6 +16,22 @@ format: html
 ## Introduction
 
 
+
+
+
+
+
+
+$$
+F_{ST} = \frac{\sum_{i=1}^\ell \sigma_{q_{S(i)}}^2}{\sum_{i=1}^\ell \left[  q_{T(i)} (1 - q_{T(i)}) \right]} 
+$$
+
+
+
+
+
+
+
 ```{r}
 # make examples of 4-6 populations that all have the same Fst but different alleleic spectra.
 library( gstudio )
