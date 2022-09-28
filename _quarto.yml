@@ -1,0 +1,14 @@
+project:
+  title: "Genetic Heteroscedasticity"
+  output-dir: docs
+
+format:
+  html:
+    toc: true
+    toc-title: Contents
+    toc-location: right
+    html-math-method: mathjax
+    citations-hover: true
+    footnotes-hover: true
+    link-external-icon: true
+    self-contained: true

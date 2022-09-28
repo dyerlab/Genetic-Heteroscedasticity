@@ -1,0 +1,31 @@
+---
+title: "The Geometry of Genetic Structure I"
+subtitle: "Genetic Heteroscedasticity"
+abstract: |
+    An estimate of the amount of genetic variation in a sampled locale is often based upon the standardized mean divergence in allele frequencies as manifest in statistics such as F<sub>ST</sub> and their ilk.  While informative, and indeed rooted in the foundations of evolutionary theory, simple abstractions such as these may be insensitive to more nuanced components of genetic structure due to their robustness—it is well understood that a specific value of F<sub>ST</sub> may represent an infinite number of population arrangements, all of which just happen to have the same ratio of among to within population genetic variance.  This manuscript is the first in a pair focusing on a geometric interpretation of population genetic structure, the benefit of which may provide praticioneers of popualtion genetic studies additional tools and a broader understanding of standing structure.
+author:
+  - name: Rodney J. Dyer 
+    url: https://dyerlab.org
+    affiliation: Center for Environmental Studies<br/>Virginia Commonwealth University<br/>Richmond, Virginia 23284, USA
+    affiliation-url: https://ces.vcu.edu
+    orcid_id: 0000-0003-4707-3453
+date: "`r Sys.Date()`"
+format: html
+---
+
+## Introduction
+
+
+```{r}
+# make examples of 4-6 populations that all have the same Fst but different alleleic spectra.
+library( gstudio )
+
+
+```
+
+
+
+
+
+
+
