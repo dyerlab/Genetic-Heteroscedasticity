@@ -29,6 +29,12 @@ $$
 
 
 
+$$
+F_{ST} = \frac{\bar{p}(1-\bar{p}) - \bar{ p(1-p) } }{\bar{p}(1 - \bar{p} )}
+$$
+
+
+
 
 
 
@@ -36,7 +42,12 @@ $$
 # make examples of 4-6 populations that all have the same Fst but different alleleic spectra.
 library( gstudio )
 
+f <- matrix( c(1,0,0,1,0,1,0,1), nrow=4, byrow = T)
+ht <- 1 - sum((colSums(f)/nrow(f))^2)
+hs <- mean(1-rowSums(f^2))
 
+fst <- (ht - hs)/ht
+c( ht-hs, ht, fst )
 ```
 
 
