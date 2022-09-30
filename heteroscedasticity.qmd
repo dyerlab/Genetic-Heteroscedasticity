@@ -106,12 +106,26 @@ where each of the $f_i$ frequencies represent the frequency in the individual.  
 
 
 $$
-\vec{p}_i = [ \vec{p}_{i,1}, \vec{p}_{i,2}, \vec{p}_{i,3}, \dots, \vec{p}_{i,\ell}]
+\vec{p}_i = [ \vec{p}_{i,1} | \vec{p}_{i,2} | \vec{p}_{i,3} | \dots | \vec{p}_{i,\ell}]
 $$
 
 
 
 ## Within Population Structure
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
