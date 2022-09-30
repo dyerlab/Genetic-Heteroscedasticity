@@ -2449,6 +2449,8 @@ vertical-align: -.125em;
    
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#vectorizing-allelic-spectra" id="toc-vectorizing-allelic-spectra" class="nav-link" data-scroll-target="#vectorizing-allelic-spectra">Vectorizing Allelic Spectra</a></li>
+  <li><a href="#within-population-structure" id="toc-within-population-structure" class="nav-link" data-scroll-target="#within-population-structure">Within Population Structure</a></li>
   </ul>
 </nav>
 </div>
@@ -2706,9 +2708,8 @@ F_{ST} = \frac{\sum_{i=1}^\ell \sigma_{q_{S(i)}}^2}{\sum_{i=1}^\ell \left[  q_{T
 <blockquote class="blockquote">
 <p>The fixation index [Fst] is thus not a measure of the degree of differentiation in the sense implied in the extreme case by the absence of any common allele. It measures differentiation within the total array in the sense of the extent to which the process of fixation has gone toward completion.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 </blockquote>
-<p>where two population share no allele at a diallelic locus, where four popcompare cases 1, 6, 7, &amp; 8 in the following table, all of which have the same value for Fst but have different allele spectra (in particular, see 7 &amp; 8, which have subsets of populations that have Fst = 0!</p>
-<p>To view this in a more broad context, we can easily show that for any particular value of Fst, we can define a similarly large number of population configurations that results in both the same amount of overall genetic structure (<span class="math inline">\(F_{st}\)</span>) <em>and</em> the same amount of within strata diversity (<span class="math inline">\(H_t\)</span>).</p>
-<p>There are two examples that highlight some of the challenges for this.</p>
+<p>To view this in a more broad context, we can easily show that for any particular value of <span class="math inline">\(F_{st}\)</span>, we can define a similarly large number of population configurations that results in both the same amount of overall genetic structure (<span class="math inline">\(F_{st}\)</span>) <em>and</em> the same amount of within strata diversity (<span class="math inline">\(H_t\)</span>).</p>
+<p>There are two examples:</p>
 <ol type="1">
 <li><p>It is possible to fix the allele frequencies and shuffle the labels. For example, the identity of the specific locale relative to the inherent allele frequencies is not unique. Consider the case where Population A has <code>p=0.3</code> at a locus and Population B has <code>p=0.7</code> After some perturbation in the system or iterating across generations, we may have the situation where Population A has <code>p = 0.7</code> and Population B has <code>p = 0.3</code>. Measuring structure or diversity within and among these pairs of pops will yield identical values even though the relative positions of each population has been swapped in allele space.</p></li>
 <li><p>More generally, for any given value of diversity and structure, we can find an infinite set of populations that can yield the same estimates. The animation below is an example with <code>K=12</code> populations for a single 3-allele locus. The plots are of the first two allele frequencies and the estimates of both diversity and differentiation are the same to the first 3 decimal points (n.b., we can be more stringent but I think this makes the point close enough).</p></li>
@@ -2720,6 +2721,20 @@ F_{ST} = \frac{\sum_{i=1}^\ell \sigma_{q_{S(i)}}^2}{\sum_{i=1}^\ell \left[  q_{T
 </figure>
 </div>
 <p>In both of these situations, the relative position and arrangements of the individual populations are not unique. Now, this may not be an issue, if the kinds of questions you are working with do not rely upon interpreting the relative positions of populations in allele space. However, for many population, conservation, and landscape type studies, it is exactly the relative positions of populations that are the focus of the study. As such, to ignore the <em>irreversibility of structure and diversity statistics</em> is to pass up on potentially valuable insights on the species and systems you are working with.</p>
+</section>
+<section id="vectorizing-allelic-spectra" class="level2">
+<h2 class="anchored" data-anchor-id="vectorizing-allelic-spectra">Vectorizing Allelic Spectra</h2>
+<p>For simplicity, the frequency spectra for individuals and populations will be denoted in vector notation. For example, a locus with <span class="math inline">\(m\)</span> independently assorting alleles is represented as follows</p>
+<p><span class="math display">\[
+\vec{p} = [f_1, f_2, ..., f_m]
+\]</span></p>
+<p>where each of the <span class="math inline">\(f_i\)</span> frequencies represent the frequency in the individual. For haploid samples, the sample space is <span class="math inline">\([0,1]\)</span></p>
+<p><span class="math display">\[
+\vec{p}_i = [ \vec{p}_{i,1}, \vec{p}_{i,2}, \vec{p}_{i,3}, \dots, \vec{p}_{i,\ell}]
+\]</span></p>
+</section>
+<section id="within-population-structure" class="level2">
+<h2 class="anchored" data-anchor-id="within-population-structure">Within Population Structure</h2>
 </section>
 
 
