@@ -73,7 +73,9 @@ df %>%
     geom_text( aes(0.55,0.75,label=Lab3), data = labs, hjust=0, size=7, col="black" ) + 
     geom_text( aes(0.57,0.70,label=Lab4), data = labs, hjust=0, size=7, col="black" ) + 
     theme( legend.position = "none") +
-    transition_states( Set, transition_length = 4 ) + 
-    ease_aes('quadratic-in-out')
+    transition_states( Set ) + 
+    ease_aes('sine-in-out') -> p
+
+anim_save("pops.gif",p)
 
 
