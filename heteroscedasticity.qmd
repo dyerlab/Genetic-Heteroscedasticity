@@ -15,11 +15,12 @@ format: html
 
 ## Introduction
 
-
-
-
-
 The mapping of genotypes -> estimates of both within locale diversity and among local structure are a fundamental component of population and landscape genetic analyses, and indeed the formulation for our understanding of how evolution proceeds.
+
+
+
+
+
 
 A common method for measuring structure is from Sewell Wright 's $F_{st}$ statistic and its offspring. At heart, the parameters is defined as the fraction of the total genetic variance that can be contributed to individuals being in different populations. This parameter has many offspring but in its most general form, it can be defined as the ratio of the among locale variance in allele frequencies standardized by the variance in the global allele frequencies. For a single locus, this becomes.
 
@@ -116,11 +117,19 @@ $$
 
 
 
+## Type II Error Rate
+
+
+## Consequnce of Missing Data
+
+
+
+## Inbreeding Effects
 
 
 
 
-
+## Examples from Real Data
 
 
 
