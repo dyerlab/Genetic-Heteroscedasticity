@@ -78,7 +78,7 @@ Of particular importance here, note that not only is the summarizing ratio of am
 This led Wright to suggest that:
 
 
-> The fixation index [Fst] is thus not a measure of the degree of differentiation in the sense implied in the extreme case by the absence of any common allele. It measures differentiation within the total array in the sense of the extent to which the process of fixation has gone toward completion.^[Wright, S. 1978.  [Evolution & the Genetics of Populations 4: Variability within and among natural populations.](https://www.amazon.com/Evolution-Genetics-Populations-Variability-Natural-dp-0226910415/dp/0226910415/ref=mt_other?_encoding=UTF8&me=&qid=) University of Chicago Press. .] 
+> The fixation index [Fst] is thus not a measure of the degree of differentiation in the sense implied in the extreme case by the absence of any common allele. It measures differentiation within the total array in the sense of the extent to which the process of fixation has gone toward completion.^[Wright, S. 1978.  [Evolution & the Genetics of Populations 4: Variability within and among natural populations.](https://www.amazon.com/Evolution-Genetics-Populations-Variability-Natural-dp-0226910415/dp/0226910415/ref=mt_other?_encoding=UTF8) University of Chicago Press. .] 
 
 To view this in a more broad context, we can easily show that for any particular value of $F_{st}$, we can define a similarly large number of population configurations that results in both the same amount of overall genetic structure ($F_{st}$) *and* the same amount of within strata diversity ($H_t$).
 
