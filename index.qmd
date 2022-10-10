@@ -1,6 +1,5 @@
 ---
-title: "The Geometry of Genetic Structure I"
-subtitle: "Genetic Heteroscedasticity"
+title: "A Geometric Interpretatyion of Population Genetic Structure"
 abstract: |
     An estimate of the amount of genetic variation in a sampled locale is often based upon the standardized mean divergence in allele frequencies as manifest in statistics such as F<sub>ST</sub> and their ilk.  While informative, and indeed rooted in the foundations of evolutionary theory, simple abstractions such as these may be insensitive to more nuanced components of genetic structure due to their robustness—it is well understood that a specific value of F<sub>ST</sub> may represent an infinite number of population arrangements, all of which just happen to have the same ratio of among to within population genetic variance.  This manuscript is the first in a pair focusing on a geometric interpretation of population genetic structure, the benefit of which may provide praticioneers of popualtion genetic studies additional tools and a broader understanding of standing structure.
 author:

@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Rodney J. Dyer">
-<meta name="dcterms.date" content="2022-09-30">
+<meta name="dcterms.date" content="2022-10-10">
 
-<title>The Geometry of Genetic Structure I</title>
+<title>A Geometric Interpretatyion of Population Genetic Structure</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -2451,6 +2451,10 @@ vertical-align: -.125em;
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
   <li><a href="#vectorizing-allelic-spectra" id="toc-vectorizing-allelic-spectra" class="nav-link" data-scroll-target="#vectorizing-allelic-spectra">Vectorizing Allelic Spectra</a></li>
   <li><a href="#within-population-structure" id="toc-within-population-structure" class="nav-link" data-scroll-target="#within-population-structure">Within Population Structure</a></li>
+  <li><a href="#type-ii-error-rate" id="toc-type-ii-error-rate" class="nav-link" data-scroll-target="#type-ii-error-rate">Type II Error Rate</a></li>
+  <li><a href="#consequnce-of-missing-data" id="toc-consequnce-of-missing-data" class="nav-link" data-scroll-target="#consequnce-of-missing-data">Consequnce of Missing Data</a></li>
+  <li><a href="#inbreeding-effects" id="toc-inbreeding-effects" class="nav-link" data-scroll-target="#inbreeding-effects">Inbreeding Effects</a></li>
+  <li><a href="#examples-from-real-data" id="toc-examples-from-real-data" class="nav-link" data-scroll-target="#examples-from-real-data">Examples from Real Data</a></li>
   </ul>
 </nav>
 </div>
@@ -2458,8 +2462,7 @@ vertical-align: -.125em;
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">The Geometry of Genetic Structure I</h1>
-<p class="subtitle lead">Genetic Heteroscedasticity</p>
+<h1 class="title">A Geometric Interpretatyion of Population Genetic Structure</h1>
 </div>
 
 
@@ -2485,7 +2488,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 30, 2022</p>
+      <p class="date">October 10, 2022</p>
     </div>
   </div>
     
@@ -2730,11 +2733,23 @@ F_{ST} = \frac{\sum_{i=1}^\ell \sigma_{q_{S(i)}}^2}{\sum_{i=1}^\ell \left[  q_{T
 \]</span></p>
 <p>where each of the <span class="math inline">\(f_i\)</span> frequencies represent the frequency in the individual. For haploid samples, the sample space is <span class="math inline">\([0,1]\)</span></p>
 <p><span class="math display">\[
-\vec{p}_i = [ \vec{p}_{i,1}, \vec{p}_{i,2}, \vec{p}_{i,3}, \dots, \vec{p}_{i,\ell}]
+\vec{p}_i = [ \vec{p}_{i,1} | \vec{p}_{i,2} | \vec{p}_{i,3} | \dots | \vec{p}_{i,\ell}]
 \]</span></p>
 </section>
 <section id="within-population-structure" class="level2">
 <h2 class="anchored" data-anchor-id="within-population-structure">Within Population Structure</h2>
+</section>
+<section id="type-ii-error-rate" class="level2">
+<h2 class="anchored" data-anchor-id="type-ii-error-rate">Type II Error Rate</h2>
+</section>
+<section id="consequnce-of-missing-data" class="level2">
+<h2 class="anchored" data-anchor-id="consequnce-of-missing-data">Consequnce of Missing Data</h2>
+</section>
+<section id="inbreeding-effects" class="level2">
+<h2 class="anchored" data-anchor-id="inbreeding-effects">Inbreeding Effects</h2>
+</section>
+<section id="examples-from-real-data" class="level2">
+<h2 class="anchored" data-anchor-id="examples-from-real-data">Examples from Real Data</h2>
 </section>
 
 
