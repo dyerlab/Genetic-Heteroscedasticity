@@ -1,8 +1,8 @@
-![](https://github.com/dyerlab/Genetic-Heteroscedasticity/raw/main/media/pops.gif)
 # Genetic Heteroscedasticity
 
 Quantifying the variance in within-population diversity.
 
+![](https://github.com/dyerlab/Genetic-Heteroscedasticity/raw/main/media/pops.gif)
 
 ## Contents
 
